@@ -1,0 +1,93 @@
+@font-face{
+	font-family:"STHeitiLight";
+	src:url("../fonts/STHeitiLight.ttf");
+}
+.wrap {
+	width:6.4rem;
+	font-family: "黑体";
+}
+/*万能清浮动*/
+ .clearfix:before,.clearfix:after{
+    display:block;
+    content:"";
+ }
+.clearfix:after{
+    clear:both;
+}
+/*IE 6需要加上以下代码*/
+.clearfix{zoon:1;}
+.header{
+	width:6.4rem;
+	height: 0.88rem;
+	background-color: #50bbdb;
+}
+.header a:nth-child(1) {
+	display: block;
+	float: left;
+	width:0.43rem;
+	height: 0.43rem;
+	margin-top: 0.23rem;
+	margin-left:0.45rem;
+}
+.header a:nth-child(1) img{
+	display: block;
+	width:0.43rem;
+	height: 0.43rem;
+}
+.header p{
+	width:4.6rem;
+	float:left;
+	font-size: 0.28rem;
+	color: #ffffff;
+	line-height:0.88rem;
+	text-align: center;
+}
+.header a:nth-child(3) {
+	display: block;
+	float: right;
+	width:0.52rem;
+	height: 0.39rem;
+	margin-right: 0.21rem;
+	margin-top: 0.21rem;
+}
+.header a:nth-child(3) img{
+	display: block;
+	width:0.52rem;
+	height: 0.39rem;
+}
+/*主要内容标题*/
+.main{
+	width:6.4rem;
+}
+.main_title{
+	width:5.56rem;
+	height: 1.92rem;
+	margin: 0 auto;
+}
+.main_title img{
+	display: block;
+	float: left;
+	width:1.5rem;
+	height: 1.5rem;
+	margin-top: 0.2rem;
+}
+.main_title p{
+	float: right;
+	text-align: center;
+	width:3rem;
+	font-size: 0.28rem;
+	line-height: 0.68rem;
+	border-bottom: 1px dotted #cccccc;
+	margin-top: 0.62rem;
+	margin-right: 0.6rem;
+}
+.main_content{
+	width:5.47rem;
+	font-size: 0.21rem;
+	margin: 0 auto;
+	border: 1px dotted #cccccc;
+	padding: 0.2rem 0.1rem;
+}
+.main_content p{
+	line-height: 0.36rem;
+}

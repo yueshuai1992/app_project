@@ -1,0 +1,25 @@
+.cf{zoom:1}
+.cf:after{display:block;height:0px;visibility:hidden;clear:both;overflow:hidden;content:''}
+/* citybox */
+.citybox{padding-bottom:0.6rem;background:#fff;width:6.4rem;margin:0 auto; display: none;}
+.citybox h2{position:relative;padding-bottom:0px;line-height:0.3rem;margin:0.2rem 0.2rem 0.12rem;padding-left:0.14rem;padding-right:0.14rem;zoom:1;display:inline-block;background:#00c7c7;height:0.32rem;color:#fff;padding-top:0px;border-radius:0}
+.citybox h2 span{border-bottom:#fff 0.06rem solid;position:absolute;border-left:#fff 0.06rem solid;line-height:0;width:0px;display:block;float:none;height:0px;font-size:0px;border-top:#00c7c7 0.06rem solid;top:0.32rem;border-right:#fff 0.06rem solid;left:0.2rem;display: block;}
+.citybox li{border-bottom:#fff 1px solid;border-top:#fff 1px solid}
+.citybox p{padding-bottom:6px;padding-left:0.2rem;padding-right:0.06rem;border-top:#fff 1px solid;padding-top:0.06rem}
+.citybox span.label{border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;line-height:0.24rem;zoom:1;display:block;height:0.3rem;vertical-align:top;border-top:#ddd 1px solid;margin-right:0.05rem;border-right:#ddd 1px solid;border-radius:0;background: #cccccc}
+.citybox span.label strong{text-align:center;width:0.28rem;display:block;font-family:tahoma;font-size:0.16rem;}
+.citybox span{zoom:1;display:inline-block;vertical-align:top}
+.citybox span i{font-style:normal;margin:0px 0.03rem ;color:#ccc}
+.citybox .hover{border-bottom-color:#e5e5e5;border-top-color:#e5e5e5;border-right-color:#e5e5e5;border-left-color:#e5e5e5}
+.citybox .hover p{background:#f7f7f7}
+.citybox .hover span.label{border-bottom-color:#1fb7bb;border-top-color:#1fb7bb;border-right-color:#1fb7bb;border-left-color:#1fb7bb}
+.citybox .hover span.label strong{border-bottom-color:#00c7c7;border-top-color:#00c7c7;background:#00c7c7;color:#fff;border-right-color:#00c7c7;border-left-color:#00c7c7}
+.citybox a{width:5.5rem;line-height:0.3rem;margin:0.05rem 0.1rem;border-bottom:1px dotted #cccccc;zoom:1;display:block;font-weight:200;color:#000;font-size:0.14rem;text-decoration:none;}
+.citybox a:hover{color:#50bbdb}
+.citySearchBox{display: block;	margin:0 auto;height: 0.3rem; float: left; line-height: 0.3rem;border-left: none;font-size: 0.18rem;width: 3rem;height: 0.3rem;border:none;outline:none;
+}
+.citySearch{
+	overflow: hidden;border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;width:3.5rem;height:0.3rem;background: none;margin-left: 1.55rem;margin-top: 0.2rem; margin-bottom: 0.1rem;
+	box-shadow: 0 0 0.1rem #50bbdb;
+}
+.citybox i{display: block;float:left;color:#cccccc;width:0.3rem; height: 0.3rem;font-size: 0.18rem; text-align: center;line-height: 0.32rem;}

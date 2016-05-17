@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
 	<title>南京搜索结果页</title>
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/result_NANJING.css">
 	<script src = "js/fontsizeset.js"></script>
 </head>
@@ -90,17 +93,69 @@
 			</div>
 		</main>
 		<footer>
-			<ul class="clearfix">
-				<li><div><img src="img/footer_img1.png" alt=""></div>
-				<p>出发城市</p></li>
-				<li><div><img src="img/footer_img2.png" alt=""></div>
-				<p>行程天数</p></li>
-				<li><div><img src="img/footer_img3.png" alt=""></div>
-				<p>出行时间</p></li>
-				<li><div><img src="img/footer_img4.png" alt=""></div>
-				<p>推荐排序</p></li>
-			</ul>
+			<div id="overlay">
+
+			</div>
+			<div class="cityNavbox">
+				<div class="c_top">
+					<a href="">取消</a>
+					<a href="#">清空已选</a>
+					<a href="">确定</a>
+				</div>
+				<ul class="c_left">
+					<li>目&nbsp;&nbsp;的&nbsp;&nbsp;地</li>
+					<li>出发城市</li>
+					<li>行程天数</li>
+					<li>出行时间</li>
+				</ul>
+				<ul class="c_right">
+					<li>
+						<p>不限</p>
+						<input type="checkbox" id="checkbox-2-1" class="regular-checkbox big-checkbox"  /><label for="checkbox-2-1"></label>
+					</li>
+					<li>
+						<p>北京</p>
+						<input type="checkbox" id="checkbox-2-2" class="regular-checkbox big-checkbox" /><label for="checkbox-2-2"></label>
+					</li>
+					<li>
+						<p>南京</p>
+						<input type="checkbox" id="checkbox-2-3" class="regular-checkbox big-checkbox" /><label for="checkbox-2-3"></label>
+					</li>
+					<li>
+						<p>上海</p>
+						<input type="checkbox" id="checkbox-2-4" class="regular-checkbox big-checkbox" /><label for="checkbox-2-4"></label>
+					</li>
+					<li>
+						<p>杭州</p>
+						<input type="checkbox" id="checkbox-2-5" class="regular-checkbox big-checkbox" /><label for="checkbox-2-5"></label>
+					</li>
+				</ul>
+			</div>
+			<div class="cityNav">
+				<a href="#">
+					<i class="icon iconfont">&#xe612;</i>
+					<p>出发城市</p>
+				</a>
+				<a href="#">
+					<i class="icon iconfont">&#xe60b;</i>
+					<p>行程天数</p>
+				</a>
+				<a href="#">
+					<i class="icon iconfont">&#xe613;</i>
+					<p>出行时间</p>
+				</a>
+				<a href="#">
+					<i class="icon iconfont">&#xe614;</i>
+					<p>推荐排序</p>
+				</a>
+			</div>
 		</footer>
 	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto-touch.js"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/result_NANJING.js"></script>
+
 </body>
 </html>

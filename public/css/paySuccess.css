@@ -1,0 +1,137 @@
+body{
+	background:#f6f6f6;
+}
+.wrap {
+	width:100%;
+	font-family: "黑体";
+	background:#f6f6f6;
+}
+/*万能清浮动*/
+ .clearfix:before,.clearfix:after{
+    display:block;
+    content:"";
+ }
+.clearfix:after{
+    clear:both;
+}
+/*IE 6需要加上以下代码*/
+.clearfix{zoon:1;}
+
+/*header*/
+.header{
+	width:100%;
+	height: 0.88rem;
+	background-color: #50bbdb;
+	overflow: hidden;
+}
+.header i{
+	width:1.32rem;
+	font-size:0.5rem;
+	line-height:0.88rem;
+	text-align: center;
+	display: block;
+	color: #fff;
+	float: left;
+	overflow: hidden;
+}
+.header p{
+	font-size:0.28rem;
+	color:#fff;
+	line-height:0.88rem;
+}
+.header p:nth-child(2){
+	margin-left:1.2rem;
+	float: left;
+}
+.header p:nth-child(3){
+	width:0.83rem;
+	text-align: center;
+	float: right;
+	font-size: 0.2rem;
+}
+.main {
+	width:6.4rem;
+}
+.main_title {
+	font-size:0.24rem;
+	width:6.4rem;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	background:#fff;
+}
+.main_title i{
+	font-size: 0.34rem;
+	display: block;
+	float: left;
+	color:#50bbdb;
+	line-height:0.81rem;
+	text-align: center;
+	margin-left:2.1rem;
+}
+.main_title  p{
+	text-align: center;
+	line-height:0.81rem;
+	color:#50bbdb;
+	float: left;
+	margin-left: 0.2rem;
+}
+.main_content ul{
+	background: #fff;
+	font-size:0.22rem;
+	padding-bottom:0.5rem;
+}
+.main_content li{
+	margin-left: 0.4rem;
+	margin-right:0.3rem;
+	width:5.7rem;
+	overflow: hidden;
+}
+.main_content li:nth-child(1){
+	padding-top: 0.15rem;
+}
+.main_content li:nth-child(2){
+	border-bottom:dotted 1px #ccc;
+	padding-bottom: 0.1rem;
+	margin-bottom: 0.05rem;
+}
+.main_content li:nth-child(5){
+	border-bottom:dotted 1px #ccc;
+	padding-bottom: 0.1rem;
+	margin-bottom: 0.05rem;
+}
+.main_content p{
+	line-height:0.44rem;
+}
+.main_content p:nth-child(1){
+	float: left;
+}
+.main_content p:nth-child(2){
+	float: right;
+	font-weight: bold;
+}
+.main_bottom{
+	width:5.5rem;
+	margin:0 auto;
+}
+.main_bottom p {
+	font-size:0.22rem;
+	color:#333333;
+	width:5.5rem;
+	line-height: 0.43rem;
+	margin-top:0.43rem;
+	margin-bottom:0.84rem;
+}
+.main_bottom a{
+	width:5.46rem;
+	height: 0.73rem;
+	display: block;
+	text-decoration: none;
+	color:#50bbdb;
+	font-size: 0.32rem;
+	border-radius: 0.1rem;
+	border:1px solid #ccc;
+	text-align: center;
+	line-height: 0.73rem;
+	font-weight: bold;
+}

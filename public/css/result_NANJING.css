@@ -128,31 +128,160 @@ footer{
 	width:6.4rem;
 	height: 1rem;
 	background: #fff;
+}
+.cityNav{
+	width:6.4rem;
+	height: 1rem;
+	position: fixed;
+	bottom:0;
+	overflow: hidden;
 	border-top:1px solid #cccccc;
 }
-footer ul{
-	width:6.4rem;
-	margin:0 auto;
-}
-footer li {
-	float: left;
-	/*width:1.6rem;*/
-	margin-left: 0.3rem;
-	margin-right:0.5rem;
-}
-footer div{
-	margin-bottom: 0.1rem;
-}
-footer img{
+ .cityNav a {
+	text-decoration: none;
 	display: block;
-	width:0.47rem;
-	height: 0.47rem;
-	margin :0 auto;
-	margin-top: 0.2rem;
+	float: left;
+	width:1.59rem;
+	height: 1rem;
+	background: #fff;
+	padding-top: 0.1rem;
 }
-footer p{
+.cityNav a i{
+	color:#cdcdcd;
+	font-size: 0.5rem;
+	display: block;
+	text-align: center;
+}
+.cityNav a p{
+	color:#000;
+	display: block;
+	text-align: center;
 	font-size: 0.2rem;
 }
+/*城市切换行程天数出行时间*/
+.cityNavbox {
+	width:6.4rem;
+	height: 4.2rem;
+	position: fixed;
+	bottom:0;
+	z-index: 9999;
+	display: none;
+}
+.c_top{
+	width:6.4rem;
+	height:0.7rem;
+	color:#50bbdb;
+	overflow: hidden;
+	background:#50bbdb;
+}
+.c_top a {
+	text-decoration: none;
+	color:#fff;
+	font-size:0.24rem;
+	display: block;
+	line-height: 0.7rem;
+}
+.c_top a:nth-child(1){
+	float: left;
+	margin-left: 0.3rem;
+}
+.c_top a:nth-child(2){
+	float: left;
+	margin-left: 1.97rem;
+}
+.c_top a:nth-child(3){
+	float: right;
+	margin-right: 0.3rem;
+}
+.c_left {
+	width:1.95rem;
+	height: 3.5rem;
+	background: #ebebeb;
+	float: left;
+}
+.c_left li{
+	line-height: 0.68rem;
+	font-size:0.24rem;
+	color: #000;
+	text-align: center;
+	width:1.95rem;
+}
+.c_left li:nth-child(1){
+	background: #fff;
+	color: #50bbdb;
+}
+.c_right{
+	width:4.45rem;
+	height: 3.5rem;
+	float: right;
+	background: #fff;
+}
+.c_right li{
+	overflow: hidden;
+	margin-left:0.2rem;
+	width:4.1rem;
+	line-height: 0.68rem;
+	border-bottom: 1px solid #ccc;
+	font-size:0.24rem;
+}
+.c_right p{
+	width:3rem;
+	margin-left:0.6rem;
+	float: left;
+}
+/*单选框*/
+.regular-checkbox {
+	display: none;
+}
+/*打开页面显示的框的背景*/
+.regular-checkbox + label {
+	border: 1px solid #cacece;
+	border-radius: 1px;
+	display: inline-block;
+	position: relative;
+	left:0rem;
+	top:0.15rem;
+}
+/*改变后框内的背景颜色*/
+.regular-checkbox:checked + label {
+	border: 1px solid  #50bbdb;
+}
+/*对勾颜色*/
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 0.14rem;
+	position: absolute;
+	top: 0px;
+	left: 0.03rem;
+	color: #50bbdb;
+}
+/*框的大小*/
+.big-checkbox + label {
+	width:0.41rem;
+	height:0.31rem;
+}
+/*对勾大小位置*/
+.big-checkbox:checked + label:after {
+	font-size: 0.28rem;
+	top:-0.18rem;
+	left: 0.1rem;
+}
+/*单选框*/
+/*遮罩*/
+#overlay {
+    background: #000;
+    filter: alpha(opacity=50); /* IE的透明度 */
+    opacity: 0.5;  /* 透明度 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+    height: 100%; /* 此处的图层要大于页面 */
+    display: none;
+}
+
+
 
 @media screen and (max-width: 320px){
 

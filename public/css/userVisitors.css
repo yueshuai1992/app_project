@@ -1,0 +1,166 @@
+
+.wrap {
+	width:100%;
+	font-family: "黑体";
+}
+/*万能清浮动*/
+ .clearfix:before,.clearfix:after{
+    display:block;
+    content:"";
+ }
+.clearfix:after{
+    clear:both;
+}
+/*IE 6需要加上以下代码*/
+.clearfix{zoon:1;}
+
+/*header*/
+.header{
+	width:100%;
+	height: 0.88rem;
+	background-color: #50bbdb;
+	overflow: hidden;
+}
+.header i{
+	width:1.32rem;
+	font-size:0.5rem;
+	line-height:0.88rem;
+	text-align: center;
+	display: block;
+	color: #fff;
+	float: left;
+	overflow: hidden;
+}
+.header p{
+	font-size:0.28rem;
+	color:#fff;
+	line-height:0.88rem;
+}
+.header p:nth-child(2){
+	margin-left:1.05rem;
+	float: left;
+}
+.header p:nth-child(3){
+	width:0.83rem;
+	text-align: center;
+	float: right;
+	font-size: 0.2rem;
+}
+.main {
+	width:6.4rem;
+}
+.main_title {
+	font-size:0.24rem;
+	width:6.4rem;
+}
+.main_title  p{
+	text-align: center;
+	line-height:0.5rem;
+	border-bottom: 1px solid #ccc;
+}
+.main_title  p span{
+	color:#50bbdb;
+}
+.main_content ul{
+	width:6.4rem;
+}
+.main_content li {
+	width:6.4rem;
+	height: 0.66rem;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	font-size: 0.2rem;
+}
+.main_content li i{
+	width:0.54rem;
+	display: block;
+	float: left;
+	font-size: 0.48rem;
+	color: #50bbdb;
+	padding-left: 0.46rem;
+	line-height: 0.66rem;
+}
+.main_content li p{
+	width:4.55rem;
+	display: block;
+	float: left;
+	line-height: 0.66rem;
+	margin-left: 0.2rem;
+}
+
+/*单选按钮*/
+.regular-checkbox {
+	display: none;
+}
+/*打开页面显示的园的背景*/
+.regular-checkbox + label {
+	border: 1px solid #50bbdb;
+	border-radius:50%;
+	/*padding: 9px;*/
+	display: inline-block;
+	position: relative;
+	top:0.15rem;
+	left:0.1rem;
+}
+/*默认图标的背景*/
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+}
+/*改变后园内的背景颜色*/
+.regular-checkbox:checked + label {
+	border: 1px solid #50bbdb;
+	color: #50bbdb;
+}
+/*对勾颜色*/
+.regular-checkbox:checked + label:after {
+	content: ' ';
+	width: 0.14rem;
+	height: 0.14rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.07rem;
+	background: #50bbdb;
+}
+
+/*大元的大小*/
+.big-checkbox + label {
+	width:0.29rem;
+	height: 0.29rem;
+	/*margin-top: 100px;*/
+}
+/*小圆大小位置*/
+.big-checkbox:checked + label:after {
+	font-size: 0.28rem;
+	left:0.08rem;
+}
+
+
+.footer{
+	height: 0.98rem;
+	width:6.4rem;
+	background: #50bbdb;
+	position: absolute;
+	bottom:0;
+	text-align: center;
+}
+.footer a{
+	display: block;
+	text-decoration: none;
+	color:#fff;
+}
+.footer i {
+	line-height: 0.98rem;
+	font-size: 0.42rem;
+	color:#fff;
+	display: block;
+	float: left;
+	margin-left:2.03rem;
+}
+.footer p {
+	margin-top: 0.01rem;
+	font-size: 0.26rem;
+	color: #fff;
+	text-align: center;
+	float: left;
+	line-height: 0.98rem;
+	margin-left: 0.2rem;
+}

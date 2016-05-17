@@ -71,34 +71,91 @@ header i:nth-child(3){
 	font-size:0.2rem;
 	padding-bottom:0.24rem;
 }
+#content .cont:nth-child(2) span:nth-child(1){
+	padding-bottom: 0.1rem;
+	width:1.16rem;
+	height:0.5rem;
+	text-align: center;
+	background: url(../img/write.png) bottom no-repeat ;
+	background-size:1.16rem 0.09rem;
+}
+#content .cont:nth-child(2) span:nth-child(2){
+	padding-bottom: 0.1rem;
+	width:1.16rem;
+	height:0.5rem;
+	text-align: center;
+}
 #content .cont:nth-child(2) li{
-	border-bottom:0.01rem solid #dcdcdc;
+	line-height: 0.2rem;
+}
+#content .cont:nth-child(2) li:nth-child(1){
+	line-height: 0.2rem;
+	font-weight: bold;
 }
 #content .cont:nth-child(3){
 	font-family:"黑体-繁";
 	font-size:0.2rem;
+	padding-bottom:0.24rem;
+}
+#content .cont:nth-child(3) li{
+	border-bottom:0.01rem solid #dcdcdc;
+}
+#content .cont:nth-child(3) input:not(.nan){
+	width:4.0rem;
+	/*float: right;*/
+	border:none;
+	outline: none;
+}
+#content span span{
+	color:#50bbdb;
+	font-size: 0.3rem;
+}
+#content .cont:nth-child(3) .nan{
+	margin-top: 0.1rem;
+}
+#content .cont:nth-child(4){
+	font-family:"黑体-繁";
+	font-size:0.2rem;
 	padding-bottom:0.08rem;
 }
-#content .cont:nth-child(3) img{
+#content .cont:nth-child(4) img{
 	width:0.27rem;
 	height:0.29rem;
 	margin-top:0.04rem;
 	float:left;
 	padding-right:0.06rem;
 }
-#content .cont:nth-child(3) ul li p{
-	margin-top:0.18rem;
+#content .cont:nth-child(4) ul li p{
+	/*margin-top:0.18rem;*/
+	float: left;
 }
-#content .cont:nth-child(3) li{
+#content .cont:nth-child(4) ul li p span{
+	color:#50bbdb;
+	font-size: 0.3rem;
+}
+
+#content .cont:nth-child(4) li{
 	border-bottom:0.01rem solid #dcdcdc;
 	height:0.52rem;
 }
-#content .cont:nth-child(4){
+#content .cont:nth-child(4) input {
+	display: block;float: left;
+	margin-top: 0.05rem;
+	margin-left: 0.3rem;
+	border: none;
+	outline: none;
+}
+#content .cont:nth-child(4) select {
+	display: block;float: left;
+	margin-top: 0.05rem;
+	margin-left: 0.3rem;
+}
+#content .cont:nth-child(5){
 	font-family:"黑体-繁";
 	font-size:0.22rem;
 	padding-bottom:0.1rem;
 }
-#content .cont:nth-child(4) img{
+#content .cont:nth-child(5) img{
 	display:block;
 	width:0.27rem;
 	height:0.29rem;
@@ -106,14 +163,14 @@ header i:nth-child(3){
 	float:left;
 	padding-right:0.06rem;
 }
-#content .cont:nth-child(4) div{
+#content .cont:nth-child(5) div{
 	width:4.97rem;
 	float:right;
 }
-#content .cont:nth-child(4) ul li div p{
+#content .cont:nth-child(5) ul li div p{
 	float:left;
 }
-#content .cont:nth-child(4) ul li a{
+#content .cont:nth-child(5) ul li a{
 	font-family:"黑体-繁";
 	font-size:0.2rem;
 	color:#666666;
@@ -121,19 +178,20 @@ header i:nth-child(3){
 	display:block;
 	text-decoration:none;
 }
-#content .cont:nth-child(4) li{
+#content .cont:nth-child(5) li{
 	height:0.94rem;
 }
-#content .cont:nth-child(4) li:nth-child(1){
+#content .cont:nth-child(5) li:nth-child(1){
 	border-bottom:0.01rem solid #dcdcdc;
 }
-#content .cont:nth-child(4) li .price{
+#content .cont:nth-child(5) li .price{
 	float:right;
 	color:#666666;
 }
-#content .cont:nth-child(4) li .price span{
+#content .cont:nth-child(5) li .price span{
 	color:#f98d0d;
 }
+
 .cont{
 	width:6.05rem;
 	background-color:#ffffff;
@@ -205,6 +263,53 @@ header i:nth-child(3){
 	width:6.4rem;
 	text-align:center;
 	margin-top:0.25rem;
+}
+.house{
+	overflow: hidden;
+	width:6.4rem;
+}
+.house p{
+	float: left;
+}
+.house p:last-child{
+	margin-left: 0.2rem;
+}
+.house span:nth-child(3){
+	margin-top: 0.05rem;
+	display: block;
+	float: left;
+	width:0.5rem;
+	height:0.27rem;
+	border:1px solid #ccc;
+	text-align: center;
+	line-height: 0.27rem;
+}
+.house span:nth-child(2),.house span:nth-child(4)
+{
+	margin-top: 0.05rem;
+	font-size: 0.3rem;
+	display: block;
+	float: left;
+	width:0.36rem;
+	height:0.27rem;
+	color:#50bbdb;
+	border:1px solid #ccc;
+	text-align: center;
+	line-height: 0.27rem;
+	cursor: pointer;
+}
+.affrim {
+	overflow: hidden;
+	font-size: 0.18rem;
+}
+.affrim p{
+	float: left;
+}
+.affrim div{
+	float: left;
+}
+.affrim input{
+	margin-top: 0.1rem;
 }
 footer{
 	padding-left:0.17rem;

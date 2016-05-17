@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	 <meta name = "viewport" content="
-                width = device-width,
-                initial - scale = 1.0,
-                minimum - scale = 1.0,
-                maximum - scale = 1.0,
-                use - scalable = no ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
 	<title>Detail Pages</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/Detail_Pages.css">
@@ -312,5 +310,21 @@
 			</ul>
 		</footer>
 	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto-touch.js"></script>
+	<script>
+		$(".main_title li").eq(1).tap(function(){
+			$(".feature").css("display","none")
+			$(".intro").css("display","block")
+		})
+		$(".main_title li").eq(2).tap(function(){
+			$(".feature").css("display","none")
+			$(".intro").css("display","none")
+		})
+		$(".main_title li").eq(0).tap(function(){
+			$(".feature").css("display","block")
+			$(".intro").css("display","block")
+		})
+	</script>
 </body>
 </html>

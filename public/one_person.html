@@ -8,6 +8,7 @@
 	<meta http-equiv="Expires" content="0">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="css/one_person.css">
+	<link rel="stylesheet" href="css/iconfont.css">
 	<script type="text/javascript" src="js/fontsizeset.js"></script>
 	<title>个人中心_订单列表页面_APP</title>
 </head>
@@ -19,12 +20,30 @@
 		</div>
 		<div class="nav">
 			<ul>
-				<li>全部分类</li>
-				<li>按时间排序</li>
+				<li>全部分类<i class="icon iconfont">&#xe610;</i>
+				</li>
+				<li>按时间排序<i class="icon iconfont">&#xe610;</i></li>
 			</ul>
 		</div>
-		<div class="main clearfix">
+		<div id="overlay">
 
+		</div>
+		<div class="P_changeNav">
+			<div>
+				<a href="">全部分类</a>
+				<a href="">待出行</a>
+				<a href="">待支付</a>
+				<a href="">待评价</a>
+				<a href="">已取消</a>
+			</div>
+		</div>
+		<div class="P_changeNav2">
+			<div>
+				<a href="">按下单时间排序</a>
+				<a href="">按出行时间排序</a>
+			</div>
+		</div>
+		<div class="main clearfix">
 		<!-- 第一个文本块 -->
 			<div class="massagelist clearfix">
 				<ul>
@@ -40,7 +59,12 @@
 					</li>
 					<li class="text_list4">
 						<p>待出行</p>
-						<span>取消</span>
+						<select name="" id="paychange" class= "payOne">
+							<option value="取消"  selected="selected">取消</option>
+							<option value="付款">付款</option>
+							<option value="点评">点评</option>
+							<option value="查看">查看</option>
+						</select>
 					</li>
 				</ul>
 			</div>
@@ -59,7 +83,12 @@
 					</li>
 					<li class="text_list4">
 						<p>待支付</p>
-						<span>付款</span>
+						<select name="" id="paychange" class= "paytwo">
+							<option value="取消" >取消</option>
+							<option value="付款" selected="selected">付款</option>
+							<option value="点评">点评</option>
+							<option value="查看">查看</option>
+						</select>
 					</li>
 				</ul>
 			</div>
@@ -78,7 +107,12 @@
 					</li>
 					<li class="text_list4">
 						<p>待评价</p>
-						<span>点评</span>
+						<select name="" id="paychange" class= "payOne">
+							<option value="取消" >取消</option>
+							<option value="付款" >付款</option>
+							<option value="点评" selected="selected">点评</option>
+							<option value="查看">查看</option>
+						</select>
 					</li>
 				</ul>
 			</div>
@@ -97,14 +131,19 @@
 					</li>
 					<li class="text_list4">
 						<p>已取消</p>
-						<span>取消</span>
+						<select name="" id="paychange" class= "payOne">
+							<option value="取消" >取消</option>
+							<option value="付款" >付款</option>
+							<option value="点评" >点评</option>
+							<option value="查看" selected="selected">查看</option>
+						</select>
 					</li>
 				</ul>
 			</div>
-
-
-
 		</div>
 	</div>
 </body>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto-touch.js"></script>
+	<script src="js/one_person.js"></script>
 </html>

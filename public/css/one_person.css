@@ -44,6 +44,13 @@
 }
 
 /*菜单*/
+.nav {
+	width:6.4rem;
+	height: 0.74rem;
+	position: relative;
+	background: #fff;
+	z-index: 999999;
+}
 .nav li:nth-child(1){
 	width:3.19rem;
 	border-right:1px solid #d2d2d2;
@@ -61,7 +68,83 @@
 	text-align: center;
 	line-height: 0.74rem;
 }
-
+.nav li i {
+	font-size: 0.14rem;
+	color:#b5b5b5;
+	margin-left:0.14rem;
+}
+.P_changeNav{
+	width:6.4rem;
+	height: 3.62rem;
+	background: #fff;
+	font-size: 0.24rem;
+	position: absolute;
+	top:1.6rem;
+	display: none;
+	z-index: 9999999999;
+}
+.P_changeNav div{
+	width:6.4rem;
+	height: 3.62rem;
+	margin-top: -0.1rem;
+	background: url(../img/one_person_line1.png) no-repeat  top;
+	background-size: 6.4rem 0.14rem;
+}
+.P_changeNav a{
+	display: block;
+	text-decoration: none;
+	height: 0.69rem;
+	width:6.18rem;
+	border-bottom: 1px solid #aaaaaa;
+	line-height: 0.69rem;
+	padding-left: 0.22rem;
+	color:#666666;
+}
+.P_changeNav a:nth-child(1){
+	padding-top:0.14rem;
+}
+.P_changeNav2 {
+	width:6.4rem;
+	height: 1.59rem;
+	background: #fff;
+	font-size: 0.24rem;
+	position: absolute;
+	top:1.6rem;
+	display: none;
+	z-index: 9999999999;
+}
+.P_changeNav2 div{
+	width:6.4rem;
+	height: 3.62rem;
+	margin-top: -0.1rem;
+	background: url(../img/one_person_line2.png) no-repeat  top;
+	background-size: 6.4rem 0.14rem;
+}
+.P_changeNav2 a{
+	display: block;
+	text-decoration: none;
+	height: 0.69rem;
+	width:6.18rem;
+	border-bottom: 1px solid #aaaaaa;
+	line-height: 0.69rem;
+	padding-left: 0.22rem;
+	color:#666666;
+}
+.P_changeNav2 a:nth-child(1){
+	padding-top:0.14rem;
+}
+#overlay {
+    background: #000;
+    filter: alpha(opacity=50); /* IE的透明度 */
+    opacity: 0.5;  /* 透明度 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+    height: 100%; /* 此处的图层要大于页面 */
+    display: none;
+}
 /*主要内容*/
 .main{
 	background-color:#f1f1f1;
@@ -139,8 +222,7 @@
 	line-height: 0.58rem;
 	margin-left: 0.2rem;
 }
-.text_list4 span{
-	display: block;
+.text_list4 select{
 	float: right;
 	width:0.88rem;
 	margin-right: 0.28rem;
@@ -148,4 +230,6 @@
 	margin-top:0.1rem;
 	text-align: center;
 	line-height: 0.36rem;
+	outline: none;
 }
+

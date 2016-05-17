@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/addVisitors.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<script type="text/javascript" src="js/fontsizeset.js"></script>
+	<title>自驾团添加游客</title>
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<div class="header clearfix">
+			<i class="icon iconfont">&#xe60f;</i>
+			<p>添加常用游客</p>
+			<p>保存</p>
+		</div>
+		<div class="main">
+			<form action="" method="post">
+				<ul>
+					<li>
+						<p>姓名</p>
+						<input class="name" type="text" name = "name" placeholder="必填">
+					</li>
+					<li>
+						<p>证件类型</p>
+						<input type="text" class="papers" list="list" placeholder="暂无证件" name = "papers">
+						<datalist id = "list">
+							<option value="身份证"></option>
+							<option value="军官证"></option>
+							<option value="学生证"></option>
+						</datalist>
+					</li>
+					<li>
+						<p>手机</p>
+						<input type="text" class="phone" placeholder="选填" name="phone" >
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto-touch.js"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script>
+		var nameRE =/^[a-zA-Z\u4E00-\u9FA5]{1,8}$/;
+		var phoneRE = /^[1]{1}[3|7|8|5]{1}[\d]{9}$/;
+		$(".name").blur(function(){
+			var x =$(this).val();
+			reName=nameRE.test(x);//验证姓名
+			if(reName==true){
+				$(this).css("color","#000")
+			}
+			else{
+				$(this).css("color","red")
+				$(this).val("用户名格式错误，请重新输入！")
+			}
+		});
+		$(".name").focus(function () {
+			  $(this).css("color","#000")
+				$(this).val("")
+		})
+		$(".phone").blur(function(){
+			var x =$(this).val();
+			rePhone=phoneRE.test(x);//验证手机号
+			if(rePhone==true){
+				$(this).css("color","#000")
+			}
+			else{
+				$(this).css("color","red")
+				$(this).val("手机号格式错误，请重新输入！")
+			}
+		});
+		$(".phone").focus(function () {
+			  $(this).css("color","#000")
+				$(this).val("")
+		})
+	</script>
+</body>
+</html>

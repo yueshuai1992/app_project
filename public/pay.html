@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/pay.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<script type="text/javascript" src="js/fontsizeset.js"></script>
+	<title>支付成功</title>
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<div class="header clearfix">
+			<i class="icon iconfont">&#xe60f;</i>
+			<p>选择支付方式</p>
+		</div>
+		<div class="main">
+			<div class="main_title">
+				<p>订单总额：<span>￥5920</span> </p>
+			</div>
+			<div class="main_content">
+				<ul>
+					<li>
+						<img src="img/zhifubao.png" alt="">
+						<p>支付宝支付</p>
+						<input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" checked /><label for="radio-2-1"></label>
+					</li>
+					<li>
+						<img src="img/weixin.png" alt="">
+						<p>微信支付</p>
+						<input type="radio" id="radio-2-2" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-2"></label>
+					</li>
+					<li>
+						<img src="img/yinlian.png" alt="">
+						<p>银联支付</p>
+						<input type="radio" id="radio-2-3" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-3"></label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="f_left">
+				<p class= "top">
+					支付： <span> ￥5920  </span>
+				</p>
+				<p class="f_bottom">
+					剩余
+					<span class="hours">23</span>:<span class="minutes">59</span>:<span class="seconds">59</span>请尽快付款
+
+				</p>
+			</div>
+			<div class="f_right">
+				<a href="">付款</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto-touch.js"></script>
+	<script>
+		function timechange () {
+			var hours =23;
+			var minutes=59;
+			var seconds=60;
+			var t = setInterval(function(){
+
+				if(seconds<0){
+					if(minutes>0){
+						seconds=seconds+60;
+						minutes= minutes-1;
+					}
+					else{
+						if(hours>0){
+							minutes=minutes+60;
+							hours=hours-1;
+						}
+						else{
+							clearInterval(t);
+						}
+					}
+				}
+				else if(hours==0&&minutes==0&&seconds==0){
+					seconds=0;
+					$(".seconds").text(seconds);
+				}
+
+				else{
+					seconds--;
+
+				}
+				$(".seconds").text(seconds);
+				$(".minutes").text(minutes);
+				$(".hours").text(hours)
+			},1000);
+		}
+		timechange ();
+	</script>
+</body>
+</html>

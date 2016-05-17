@@ -771,7 +771,7 @@ main{
 }
 
 .app_one_bom{
-	width: 6.4rem;
+	width: 6.1rem;
 	font-size: 0.2rem;
 	color:#666666;
 	margin-left: 0.3rem;
@@ -841,6 +841,14 @@ footer{
 	height: 1.0rem;
 	padding-top: 0.1rem;
 	background: #cccccc;
+}
+footer ul {
+	width:6.4rem;
+	height: 1.0rem;
+	padding-top: 0.05rem;
+	background: #cccccc;
+	position: fixed;
+	bottom: 0;
 }
 footer li{
 	float: left;

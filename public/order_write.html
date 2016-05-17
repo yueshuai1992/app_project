@@ -6,8 +6,9 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="Expires" content="0">
+	<title>自驾团填写订单</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" href="css/order_affirm.css">
+	<link rel="stylesheet" href="css/order_write.css">
 	<link rel="stylesheet" href="css/iconfont.css">
 	<script type="text/javascript" src="js/fontsizeset.js"></script>
 </head>
@@ -35,18 +36,44 @@
 					<li>
 						<p>出游人数：3成人，0儿童</p>
 					</li>
-					<li>
-						<p>房间：2人间，愿意拼房</p>
+					<li class="house">
+						<p >房间：</p>
+						<span>-</span>
+						<span>1</span>
+						<span>+</span>
+						<p>(2人间)</p>
 					</li>
+					<li class="affrim">
+						<p class="left">是否同意拼房：</p>
+						<div class="right">
+							<input type="radio" name="sex" value="male">
+							<span>同意</span><br>
+							<input type="radio" name="sex" value="fmale">
+                            <span>不同意拼房,愿意支付房差费用￥3500</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="cont">
+				<p class="caption"><span>费用说明</span>
+				<span> 退订规则</span></p>
+				<ul>
+					<li>费用包含：</li>
+					<li>*+7x24小时优秀中/</li>
+					<li>英双语自驾向导服务（国内出发，全程陪同）；</li>
+					<li>*+国内往返美国经济舱机票、燃油附加税、机票税；</li>
+					<li>*+包含好莱坞环球影城+17英里海岸门票；</li>
+					<li>*+美国当地钻酒店住宿；</li>
+					<li>*+美国当地钻酒店住宿1；</li>
 				</ul>
 			</div>
 			<div class="cont">
 				<p class="caption">联系人信息</p>
 				<ul>
-					<li>姓名：罗小小</li>
-					<li>性别：女</li>
-					<li>手机号码：18270837892</li>
-					<li>邮箱：2689326087@qq.com</li>
+					<li><span><span>*</span>姓名：</span><input type="text" placeholder="必填"></li>
+					<li><span><span>*</span>性别：</span><input class="nan" type="radio" value="男" name="nan">男<input class="nan" type="radio" value="女" name="nan">女</li>
+					<li><span><span>*</span></span>手机号码：<input type="text"></li>
+					<li><span><span>*</span>邮箱：</span><input type="text" placeholder="必填，接收合同信息"></li>
 				</ul>
 			</div>
 			<div class="cont">
@@ -56,12 +83,21 @@
 				</div>
 				<ul>
 					<li class="clearfix">
-						<img src="img/tour_info.png" alt="">
-						<p>罗小小</p>
+
+						<p><span>*</span>姓名</p>
+						<input type="text">
 					</li>
 					<li>
-						<img src="img/tour_info.png" alt="">
-						<p>罗笑笑</p>
+						<p><span>*</span>证件类型</p>
+						<select name="" id="">
+							<option value="">身份证</option>
+							<option value="">
+								军官证
+							</option>
+							<option value="">
+								学生证
+							</option>
+						</select>
 					</li>
 				</ul>
 				<a href="" class="add"></a>

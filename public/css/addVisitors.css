@@ -1,0 +1,88 @@
+
+.wrap {
+	width:100%;
+	font-family: "黑体";
+}
+/*万能清浮动*/
+ .clearfix:before,.clearfix:after{
+    display:block;
+    content:"";
+ }
+.clearfix:after{
+    clear:both;
+}
+/*IE 6需要加上以下代码*/
+.clearfix{zoon:1;}
+
+/*header*/
+.header{
+	width:100%;
+	height: 0.88rem;
+	background-color: #50bbdb;
+	overflow: hidden;
+}
+.header i{
+	width:1.32rem;
+	font-size:0.5rem;
+	line-height:0.88rem;
+	text-align: center;
+	display: block;
+	color: #fff;
+	float: left;
+	overflow: hidden;
+}
+.header p{
+	font-size:0.28rem;
+	color:#fff;
+	line-height:0.88rem;
+}
+.header p:nth-child(2){
+	width:4.25rem;
+	text-align: center;
+	float: left;
+}
+.header p:nth-child(3){
+	width:0.83rem;
+	text-align: center;
+	float: right;
+	font-size: 0.2rem;
+}
+.main {
+	width:6.4rem;
+}
+.main ul{
+	width:6.0rem;
+	margin:0 auto;
+}
+.main li {
+	width:6.0rem;
+	height:0.53rem;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.main li p {
+	width:1.2rem;
+	padding-left:0.3rem;
+	font-size:0.22rem;
+	line-height: 0.53rem;
+	float: left;
+}
+.main li input{
+	width: 3.35rem;
+	display: block;
+	float: right;
+}
+.main .name,.phone{
+	line-height: 0.53rem;
+	border:none;
+	outline: none;
+}
+.main .papers{
+	margin-top: 0.1rem;
+	border:none;
+	outline: none;
+	background:url(../img/addVisitor_an.png) no-repeat;
+	background-size:0.29rem 0.21rem;
+	border-bottom:1px solid #000;
+	background-position: 3.1rem 0.1rem;
+}

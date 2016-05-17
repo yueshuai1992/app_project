@@ -1,0 +1,101 @@
+body{
+	background:#f6f6f6;
+}
+.wrap {
+	width:100%;
+	font-family: "黑体";
+	background:#f6f6f6;
+}
+/*万能清浮动*/
+ .clearfix:before,.clearfix:after{
+    display:block;
+    content:"";
+ }
+.clearfix:after{
+    clear:both;
+}
+/*IE 6需要加上以下代码*/
+.clearfix{zoon:1;}
+
+/*header*/
+.header{
+	width:100%;
+	height: 0.88rem;
+	background-color: #50bbdb;
+	overflow: hidden;
+}
+.header i{
+	width:1.32rem;
+	font-size:0.5rem;
+	line-height:0.88rem;
+	text-align: center;
+	display: block;
+	color: #fff;
+	float: left;
+	overflow: hidden;
+}
+.header p{
+	font-size:0.28rem;
+	color:#fff;
+	line-height:0.88rem;
+}
+.header p:nth-child(2){
+	margin-left:1rem;
+	float: left;
+}
+.header p:nth-child(3){
+	width:0.83rem;
+	text-align: center;
+	float: right;
+	font-size: 0.2rem;
+}
+.main {
+	width:6.4rem;
+}
+
+.footer{
+	width:6.4rem;
+	height: 0.96rem;
+	border-top: 0.01rem #ccc solid;
+	position:absolute;
+	bottom:0;
+	background: #fff;
+	font-size: 0.2rem;
+}
+.footer .f_left{
+	width:3.5rem;
+	padding-left:0.16rem;
+	padding-top: 0.13rem;
+	float: left;
+}
+.footer .top{
+	font-size: 0.24rem;
+	color:#f0851a;
+	/*line-height:0.55rem;*/
+	vertical-align:sub;
+}
+.footer .top span{
+	font-size: 0.28rem;
+	vertical-align:text-bottom;
+}
+.f_bottom{
+	margin-top: 0.1rem;
+	font-size:0.2rem;
+}
+.f_right{
+	float: right;
+}
+.f_right a{
+	width:1.87rem;
+	height: 0.66rem;
+	background: #50bbdb;
+	float: right;
+	color:#fff;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 0.66rem;
+	border-radius: 0.05rem;
+	text-decoration: none;
+	margin-right: 0.25rem;
+	margin-top: 0.18rem;
+}
